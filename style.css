@@ -58,17 +58,22 @@ body {
 /*--------------- match-part------------ */
 
 .match-part {
+    display: flex;
+
     width: 80%;
     margin: auto;
     /* border: 1px solid black; */
     margin-top: 90px;
+
 }
 
 .live-match-update {
     width: 20%;
+    height: 250px;
     border: 1px solid rgba(0, 0, 0, 0.832);
     background-color: rgba(0, 0, 0, 0.832);
     border-radius: 7px;
+    margin-right: 18px;
 }
 
 .live-match-update p {
@@ -100,3 +105,53 @@ body {
     border-radius: 5px;
     font-weight: 700;
 }
+
+
+.matchs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    width: 80%;
+}
+
+.match {
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.need {
+    margin-left: 15px;
+}
+
+.match a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.match span {
+    display: inline-block;
+    padding: 0px 0px 0px 0px;
+}
+
+.plyer-img {
+    width: 99%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+/* footer ---------- */
