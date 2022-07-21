@@ -320,8 +320,57 @@ footer hr {
         padding: 0%;
     }
 
-    .banner-img img {
-        margin-top: 40px;
-        width: 70%;
+    .banner-part {
+        width: 98%;
+        margin: auto;
+        /* height: 600px; */
+
     }
+
+    .banner-text {
+        width: 50%;
+        margin-left: 3rem;
+    }
+
+    .banner-img {
+        width: 50%;
+    }
+
+    .banner-img img {
+        width: 95%;
+    }
+
+    /* middle */
+    .match-part {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .live-match-update {
+        display: flex;
+        background-color: white;
+        width: 100%;
+        border: none;
+        margin: auto;
+        justify-content: space-between;
+        height: 100px;
+
+    }
+
+    .live-match {
+        border: 1px solid black;
+    }
+
+
+
+    .matchs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+
+
+
 }
