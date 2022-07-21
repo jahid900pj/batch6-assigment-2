@@ -1,0 +1,396 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+/* ------banner part ------ */
+
+.banner-part {
+    width: 80%;
+    margin: auto;
+    /* height: 600px; */
+
+}
+
+.banner {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.912);
+    border-radius: 10px;
+    margin-top: 80px;
+    height: 500px;
+
+}
+
+.banner-text {
+    width: 50%;
+    margin-left: 7rem;
+}
+
+.banner-text h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.banner-text p {
+    color: #ddd;
+    margin-bottom: 60px;
+}
+
+.banner-text a {
+    text-decoration: none;
+    color: white;
+    background-color: tomato;
+    padding: 11px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.banner-text a:hover {
+    background-color: white;
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    height: 100%;
+}
+
+
+/*--------------- match-part------------ */
+
+.match-part {
+    display: flex;
+
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 90px;
+
+}
+
+.live-match-update {
+    width: 20%;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.832);
+    background-color: rgba(0, 0, 0, 0.832);
+    border-radius: 7px;
+    margin-right: 18px;
+}
+
+.live-match-update p {
+    text-align: center;
+}
+
+.live-match {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    width: 10rem;
+    background-color: white;
+    padding: 15px 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.blog {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 10rem;
+    background-color: tomato;
+    padding: 15px 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+
+.matchs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    width: 80%;
+}
+
+.match {
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.need {
+    margin-left: 15px;
+}
+
+
+
+.match a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.match span {
+    display: inline-block;
+    padding: 0px 0px 0px 0px;
+}
+
+.plyer-img {
+    width: 99%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+/* footer ---------- */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.912);
+    margin-top: 100px;
+    padding: 90px;
+}
+
+footer h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+footer hr {
+    background-color: rgba(221, 221, 221, 0.533);
+
+}
+
+.link {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.icon>span>i {
+    font-size: 1.5em;
+    padding: 8px;
+    margin-bottom: 50px;
+    color: #ddd;
+}
+
+
+/* responsive phone --------------- */
+@media only screen and (max-width: 281px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .banner-img img {
+        margin-top: 40px;
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .banner-part {
+        width: 90%;
+        margin: auto;
+        /* height: 600px; */
+
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner-text {
+        align-items: center;
+        max-width: 100%;
+
+        text-align: center;
+        margin: auto;
+    }
+
+    .banner-text h1 {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .banner-img {
+        margin: auto;
+        width: 100%;
+    }
+
+    .banner-img img {
+        margin-top: 40px;
+    }
+
+
+
+
+    .match-part {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .live-match-update {
+        background-color: whitesmoke;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    .live-match {
+        border: 1px solid black;
+    }
+
+    .matchs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: auto;
+    }
+
+    .link {
+        display: block;
+
+    }
+
+    .link a {
+        display: block;
+        text-align: center;
+    }
+
+
+}
+
+
+
+/* responsive tab */
+
+@media (min-width:760px) and (max-width:850px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .banner-part {
+        width: 98%;
+        margin: auto;
+        /* height: 600px; */
+
+    }
+
+    .banner-text {
+        width: 50%;
+        margin-left: 3rem;
+    }
+
+    .banner-img {
+        width: 50%;
+    }
+
+    .banner-img img {
+        width: 95%;
+    }
+
+    /* middle */
+    .match-part {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .live-match-update {
+        display: flex;
+        background-color: white;
+        width: 100%;
+        border: none;
+        margin: auto;
+        justify-content: space-between;
+        height: 100px;
+
+    }
+
+    .live-match {
+        border: 1px solid black;
+    }
+
+
+
+    .matchs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+
+    /* footer */
+    .link {
+        display: block;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .link a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+
+
+
+
+}
