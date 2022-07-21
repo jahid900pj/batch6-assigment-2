@@ -46,6 +46,12 @@ body {
     margin-top: 15px;
 }
 
+.banner-text a:hover {
+    background-color: white;
+    color: tomato;
+    border: 1px solid tomato;
+}
+
 .banner-img {
     width: 50%;
 }
@@ -175,7 +181,7 @@ footer hr {
 
 .link {
     display: flex;
-    width: 60%;
+    width: 100%;
     margin: auto;
     justify-content: center;
 }
@@ -200,4 +206,122 @@ footer hr {
     padding: 8px;
     margin-bottom: 50px;
     color: #ddd;
+}
+
+
+/* responsive phone --------------- */
+@media only screen and (max-width: 281px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .banner-img img {
+        margin-top: 40px;
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .banner-part {
+        width: 90%;
+        margin: auto;
+        /* height: 600px; */
+
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner-text {
+        align-items: center;
+        max-width: 100%;
+
+        text-align: center;
+        margin: auto;
+    }
+
+    .banner-text h1 {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .banner-img {
+        margin: auto;
+        width: 100%;
+    }
+
+    .banner-img img {
+        margin-top: 40px;
+    }
+
+
+
+
+    .match-part {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .live-match-update {
+        background-color: whitesmoke;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    .live-match {
+        border: 1px solid black;
+    }
+
+    .matchs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: auto;
+    }
+
+    .link {
+        display: block;
+
+    }
+
+    .link a {
+        display: block;
+        text-align: center;
+    }
+
+
+}
+
+
+
+/* responsive tab */
+
+@media (min-width:760px) and (max-width:850px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .banner-img img {
+        margin-top: 40px;
+        width: 70%;
+    }
 }
